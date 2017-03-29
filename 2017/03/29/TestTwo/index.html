@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>实验二  git使用 | 刘恒的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、    实验目的1.掌握git使用2.掌握使用Github作为远程仓库
+二、    实验任务1.练习本地git操作2.用SSH同步本地与Github仓库
+三、    实验步骤与结果本地操作log截图
+Github上commits截图
+1.在电脑上安装git1234git version   可查看git版本git –help    可查看命令git config --global user.n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实验二  git使用">
+<meta property="og:url" content="http://yoursite.com/2017/03/29/TestTwo/index.html">
+<meta property="og:site_name" content="刘恒的博客">
+<meta property="og:description" content="一、    实验目的1.掌握git使用2.掌握使用Github作为远程仓库
+二、    实验任务1.练习本地git操作2.用SSH同步本地与Github仓库
+三、    实验步骤与结果本地操作log截图
+Github上commits截图
+1.在电脑上安装git1234git version   可查看git版本git –help    可查看命令git config --global user.n">
+<meta property="og:updated_time" content="2017-03-29T07:23:28.345Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实验二  git使用">
+<meta name="twitter:description" content="一、    实验目的1.掌握git使用2.掌握使用Github作为远程仓库
+二、    实验任务1.练习本地git操作2.用SSH同步本地与Github仓库
+三、    实验步骤与结果本地操作log截图
+Github上commits截图
+1.在电脑上安装git1234git version   可查看git版本git –help    可查看命令git config --global user.n">
+  
+    <link rel="alternate" href="/atom.xml" title="刘恒的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">刘恒的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">categories</a>
+        
+          <a class="main-nav-link" href="/tags">tags</a>
+        
+          <a class="main-nav-link" href="/about">about</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-TestTwo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/29/TestTwo/" class="article-date">
+  <time datetime="2017-03-29T06:55:40.895Z" itemprop="datePublished">2017-03-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      实验二  git使用
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一、-实验目的"><a href="#一、-实验目的" class="headerlink" title="一、    实验目的"></a>一、    实验目的</h3><p>1.掌握git使用<br>2.掌握使用Github作为远程仓库</p>
+<h3 id="二、-实验任务"><a href="#二、-实验任务" class="headerlink" title="二、    实验任务"></a>二、    实验任务</h3><p>1.练习本地git操作<br>2.用SSH同步本地与Github仓库</p>
+<h3 id="三、-实验步骤与结果"><a href="#三、-实验步骤与结果" class="headerlink" title="三、    实验步骤与结果"></a>三、    实验步骤与结果</h3><p>本地操作log截图</p>
+<p>Github上commits截图</p>
+<h4 id="1-在电脑上安装git"><a href="#1-在电脑上安装git" class="headerlink" title="1.在电脑上安装git"></a>1.在电脑上安装git</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git version   可查看git版本</div><div class="line">git –<span class="built_in">help</span>    可查看命令</div><div class="line">git config --global user.name <span class="string">"Your Name"</span>   配置用户名</div><div class="line">git config --global user.email email@example.com    配置Email地址</div></pre></td></tr></table></figure>
+<h4 id="2-创建版本库"><a href="#2-创建版本库" class="headerlink" title="2.创建版本库"></a>2.创建版本库</h4><p>  1）选择一个合适的地方，创建一个空目录：<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mkdir shiyan</div><div class="line"><span class="built_in">cd</span> shiyan</div><div class="line"><span class="built_in">pwd</span>     显示当前目录</div><div class="line">/Github   在我的电脑上，这个仓库位于</div></pre></td></tr></table></figure></p>
+<p>  2）这个目录变成Git可以管理的仓库：<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">Initialized empty Git repository <span class="keyword">in</span> D:/boke/Git/Github/.git/</div></pre></td></tr></table></figure></p>
+<pre><code>发现当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，默认是隐藏的，用ls -ah命令就可以看见
+</code></pre><h4 id="3-把文件放到版本库"><a href="#3-把文件放到版本库" class="headerlink" title="3.把文件放到版本库"></a>3.把文件放到版本库</h4><p>  1) 编写一个readme.txt文件<br>  2) 把一个文件添加到Git仓库<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add readme.txt</div></pre></td></tr></table></figure></p>
+<p>  3) 把文件提交到仓库<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">" readme.txt "</span></div></pre></td></tr></table></figure></p>
+<h4 id="4-管理修改：新增一行，删除一行，更改某些字符，删了一些又加一些，甚至创建一个新文件，都算一个修改"><a href="#4-管理修改：新增一行，删除一行，更改某些字符，删了一些又加一些，甚至创建一个新文件，都算一个修改" class="headerlink" title="4.管理修改：新增一行，删除一行，更改某些字符，删了一些又加一些，甚至创建一个新文件，都算一个修改"></a>4.管理修改：新增一行，删除一行，更改某些字符，删了一些又加一些，甚至创建一个新文件，都算一个修改</h4><p>  1）对readme.txt做一个修改<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat readme.txt</div></pre></td></tr></table></figure></p>
+<p>  2）添加<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add readme.txt</div></pre></td></tr></table></figure></p>
+<p>  3）提交<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"readme.tx"</span></div></pre></td></tr></table></figure></p>
+<h4 id="5-远程仓库："><a href="#5-远程仓库：" class="headerlink" title="5.远程仓库："></a>5.远程仓库：</h4><p>已经在本地创建了一个Git仓库后，又想在GitHub创建一个Git仓库，并且让这两个仓库进行远程同步，这样，GitHub上的仓库既可以作为备份<br>​  1）添加远程仓库<br>​     登陆GitHub，然后，在右上角找到“Createa new repo”按钮，创建一个新的仓<br>​  2）把本地仓库的内容推送到shiyan2仓库<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin [git@github.com:liuhengd/shiysn.git]</div></pre></td></tr></table></figure></p>
+<p>​  3) 把本地库的所有内容推送到远程库上<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
+<p>​  4）之后，只要本地作了提交，就可以通过命令<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure></p>
+<p>​  5）从远程仓库克隆<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> git@github.com: liuhengd/shiysn2.git   克隆一个本地库</div><div class="line"><span class="built_in">cd</span> gitskills ls   </div><div class="line">readme.md</div></pre></td></tr></table></figure></p>
+<p>​         </p>
+<h3 id="四、-实验小结"><a href="#四、-实验小结" class="headerlink" title="四、    实验小结"></a>四、    实验小结</h3><p>1）Git是分布式版本控制系统<br>2）拥有一个GitHub账号，就拥有了一个远程仓库。<br>3）要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆<br>4）版本库又名仓库，英文名repository，也可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件    的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/03/29/TestTwo/" data-id="cj0unb47d00001ogtr2rxpg9y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/14/newBlog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">实验一 在Github上用Markdown创建技术博客</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/29/TestTwo/">实验二  git使用</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/14/newBlog/">实验一 在Github上用Markdown创建技术博客</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/14/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 刘恒<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">tags</a>
+  
+    <a href="/about" class="mobile-nav-link">about</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
